@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:th="http://www.thymeleaf.org">
 
 <head>
     <meta charset="utf-8">
@@ -14,10 +13,31 @@
 
 <body>
     <div class="container">
-        <h2>Bot parameters</h2>
-        <p></p>
-        <!--Name bot-->
-        <h5>Name bot: <span th:text="${bot.nameBot}"></span> </h5>
+        <div class="row">
+            <div class="col-sm"></div>
+            <div class="col-sm">
+                <h2>Page create bot</h2>
+                <p></p>
+            </div>
+            <div class="col-sm"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm"></div>
+            <div class="col-sm">
+                <div class="mb-3">
+                    <!--Name bot-->
+                    <label for="nameBot" class="form-label">Name bot:</label>
+                    <input type="text" class="form-control" id="nameBot" placeholder="Name bot">
+                    <p></p>
+
+                </div>
+            </div>
+            <div class="col-sm"></div>
+        </div>
+
+        
+        
     </div>
 
         <form method="POST" th.object="${bot}">
